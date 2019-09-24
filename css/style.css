@@ -1,0 +1,70 @@
+body {
+    background-color:burlywood;
+}
+    /* Style the navigation menu */
+    .navbar {
+        width: 101.5%;
+        background-color: darkgreen;
+        overflow: auto;
+        margin: -10 px;
+    }
+
+    /* Navigation links */
+    .navbar a {
+        float: left;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        color: silver;
+        text-decoration: none;
+        font-size: 18px;
+        width: 25%;
+        /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
+        text-align: center;
+        /* If you want the text to be centered */
+    }
+
+    /* Add a background color on mouse-over */
+    .navbar a:hover {
+        background-color:navy;
+    }
+
+    /* Style the current/active link */
+    .navbar a:active {
+        background-color: lightgray;
+    }
+
+    #bannerimg {
+        width: 100%;
+        height: auto;
+    }
+
+.pic {
+    position:relative;
+    width: 645px;
+    margin: 2rem;
+    top: 00px;
+    right: 00px;
+    padding: 1rem;
+    border-width: 10px;
+    border-radius: 30px;
+    border-color: navy;
+    border-style: ridge;
+
+}
+
+.box {
+    position: relative;
+    width: 75%;
+    margin: 2rem;
+    padding: 1rem;
+    color: lightgray;
+    font-size: .9rem;
+
+    text-align: left;
+    border-width: 10px;
+    border-radius: 30px;
+    border-color: navy;
+    border-style:ridge;
+    background-color: darkgreen;
+}
+
