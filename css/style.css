@@ -1,4 +1,6 @@
 body {
+    font-family: 'Merriweather', serif;
+
     background-color:burlywood;
 }
     /* Style the navigation menu */
@@ -59,7 +61,7 @@ body {
     padding: 1rem;
     color: lightgray;
     font-size: .9rem;
-
+    font-family: 'Merriweather', serif;
     text-align: left;
     border-width: 10px;
     border-radius: 30px;
