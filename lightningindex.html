@@ -15,7 +15,7 @@
 
     </header>
 
-    <title>Dice</title>
+    <title>Faraday Cage</title>
     <link rel="stylesheet" type="text/css" href="../css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -23,7 +23,7 @@
     <script src="../pages/libraries/p5.js"></script>
     <script src="../pages/addons/p5.dom.js"></script>
     <script src="../pages/addons/p5.sound.js"></script>
-    <script src="../pages/dice/sketch.js"></script>
+    <script src="../pages/lightning/sketch.js"></script>
 
 </head>
 
@@ -32,11 +32,21 @@
 
     <div class="box">
         <h2>
-            Dice </h2>
-
+            Lightning </h2>
+<h3>
+        Problem 1: Starting position of lighting along rim of Van de Graaff Generator
+<br>
+        </h3>
             <h4>
-problems/solutions
-            </h4>
+Used equation of a circle and solved for x in terms of y. Generated random y value between the domain of y values. Substituted random y value into equation of circle to get x.
+<br>
+                (x-136)^2+(y-390)^2=110^2<br>
+                
+                Solving for x:<br>
+                x=136+sqrt(-y2+780y-140000)<br>
+The code ends up being: startX=136+Math.sqrt(-1*Math.pow(startY, 2)+780*startY-140000);
+
+        </h4>
 
 
 

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <header>
+        <div class="navbar">
+            <h1><img id="bannerimg" src="../images/northcrop.jpg"></h1>
+            <a href="../index.html">Home</a>
+            <a href="projects.html">Projects</a>
+            <a href="poems.html">Khemistry Fun!</a>
+            <a href="aboutme.html">About Me</a>
+
+        </div>
+        <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
+
+    </header>
+
+    <title>Kinetics</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <script src="../pages/libraries/p5.js"></script>
+    <script src="../pages/addons/p5.dom.js"></script>
+    <script src="../pages/addons/p5.sound.js"></script>
+    <script src="../pages/kinetics/sketch.js"></script>
+
+</head>
+
+<body bgcolor="green">
+    <h1>
+
+    <div class="box">
+        <h2>
+            Kinetics </h2>
+<br>
+        <h3>
+            Problem 1: Inability to access method from Nitrogen
+
+        </h3>
+        <br>
+            <h4>
+Initially, getX() and getY() were inaccessible from the Nitrogen class, when applied to nit within a for-each loop. After extensive correction (and overcorrection) of code within the Nitrogen class, the cause was determined to be an extra/missing bracket. Once resolved, the getX() and getY() calls within the runner functioned as desired. 
+            </h4>
+        <br>
+
+
+  <h3>
+Problem 2:  “Free radicals”
+
+        </h3>
+        <br>
+            <h4>
+Previously, once a reaction occurred, the reactants were moved to (1001, 1001). After a bit, a spectacular stream of Nitrogen molecules would systematically burst from the lower-right corner. (This can be seen by once again changing the coordinates back to (1001, 1001)). The issue was determined to be Hydrogen molecules coincidentally hitting the lower-right corner. Since the radius of both Hydrogen and Nitrogen are greater than 1, hydrogens were deemed close enough to the nitrogens lurking past the canvas to create another reaction, causing the unexpected display.
+            </h4>
+        <br>
+
+  <h3>
+Problem 3: Large capacity of molecules
+
+        </h3>
+        <br>
+            <h4>
+An anonymous tip informed that more molecules could be shown if noStroke() was invoked in the draw methods for each molecule. This tip turned out to be fruitful. With noStroke, the computer has less to calculate for each molecule, allowing it to simply draw dots for more molecules. 
+            </h4>
+        <br>
+</body>
+
+</html>

@@ -15,15 +15,10 @@
 
     </header>
 
-    <title>Dice</title>
+    <title>Faraday Cage</title>
     <link rel="stylesheet" type="text/css" href="../css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-
-    <script src="../pages/libraries/p5.js"></script>
-    <script src="../pages/addons/p5.dom.js"></script>
-    <script src="../pages/addons/p5.sound.js"></script>
-    <script src="../pages/dice/sketch.js"></script>
 
 </head>
 
@@ -32,12 +27,14 @@
 
     <div class="box">
         <h2>
-            Dice </h2>
+            Gimp </h2>
 
-            <h4>
-problems/solutions
-            </h4>
+</box>
 
+        <img src="../images/astronautread.jpg"><br>
+        <img src="../images/whitehouse.png"><br>
+        <img src="../images/donnieT.png"><br>
+        <img src="../images/studco.png">
 
 
 

@@ -10,7 +10,8 @@ var cage;
 
 function setup()
 {
-createCanvas(1500, 650);
+ var canvas = createCanvas(1500, 650);
+    canvas.parent('sketch-div');
   strokeWeight(2);
   background(0);
   vdgg = loadImage("../pages/lightning/data/vdgg.png");

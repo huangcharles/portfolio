@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <header>
+        <div class="navbar">
+            <h1><img id="bannerimg" src="../images/northcrop.jpg"></h1>
+            <a href="../index.html">Home</a>
+            <a href="projects.html">Projects</a>
+            <a href="poems.html">Khemistry Fun!</a>
+            <a href="aboutme.html">About Me</a>
+
+        </div>
+        <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
+
+    </header>
+
+    <title>Dice</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <script src="../pages/libraries/p5.js"></script>
+    <script src="../pages/addons/p5.dom.js"></script>
+    <script src="../pages/addons/p5.sound.js"></script>
+    <script src="../pages/dice/sketch.js"></script>
+
+</head>
+
+<body bgcolor="green">
+    <h1>
+
+    <div class="box">
+        <h2>
+            Dice </h2>
+        <br>
+<h3>
+        Problem 1: Position of new Die objects
+
+        </h3>
+        <br>
+            <h4>
+Although this would not have been a major issue for 25 dice, it would be considerably difficult on a larger set of dice to manually input the position for all dice. For 100 dice, for instance, manually setting each position would be slow and inefficient. The solution employed was to use an if-else loop to set the x and y position values based on which number dice it was. For instance, the 13th dice had the same x value as every other dice between dice [9, 14] and had the same y value as every dice with an index equivalent to 3 modulo 5.  
+            </h4>
+        <br>
+        <h3>
+            Problem 2: Statistical calculations
+
+        </h3>
+        <br>
+<h4>
+        Initially, summation and cumAvg was set within the loop that assigned the number of pips on each dice. However, since all dice ran through the same loop, summation, for instance, was not able to sum all dice values on the screen. As such, summation and cumAvg were made to be declared outside of the loop but still within the show method.
+
+        </h4>
+        <br>
+        <h3>
+Problem 3: Lurking values
+
+        </h3>
+        <br>
+<h4>
+For *mysterious* reasons, for each roll, 26 pip values were inserted into an arrayList meant to contain just pip values, with an additional lurking value at position 0 (or at an index equivalent to 0 modulo 26). To find the average and sum, the for loop was modified to exclude the value at the 0th position.
+
+        </h4>
+        <br>
+        <h3>
+Problem 4: Non-cumulative statistical calculations
+
+        </h3>
+        <br>
+<h4>
+The values of summation and cumAvg do not reset back to 0 for each roll. This means that 1) the sum and average of dice on a single roll cannot be calculated, and 2) while the 0th position’s value can easily be excluded, it is considerably more difficult to eliminate values of the 26th, 52th, 78th, etc… positions. The 1st problem has not been resolved yet. The second problem was resolved by inserting a if loop into the for loop that sums the entries of pipVals: if the index position is not equivalent to 0 modulo 26, then add the value at that index position to that of summation. 
+
+        </h4>
+        <br>
+
+
+</body>
+
+</html>
